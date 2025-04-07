@@ -14,7 +14,7 @@ const CreateBlog = () => {
     setError("");
 
     try {
-      await API.post("/blogs", form); 
+      await API.post("api/blogs", form);
       navigate("/dashboard");
     } catch (err) {
       console.error("Error creating blog:", err);
